@@ -37,6 +37,10 @@ n8n ─────────────────────────�
    ```
 
 4. 建議至少保留 2 顆 CPU 與 4 GB 可用記憶體。第一次下載映像檔需要網路及較長時間。
+5. 執行Docker compose up
+   ```bash
+   docker compose up
+   ```
 
 > 注意：`sandbox-runner-1` 需要 `privileged: true` 才能在 Docker 中建立隔離執行環境。不要替它加上 `ports:`，也不要把它部署到不受控的公網主機。
 
